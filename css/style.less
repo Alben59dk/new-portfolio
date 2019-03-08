@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+//-----LESS:    width: ~"calc(50% - 20px)";
+//-----CSS:    width: calc(50% - 20px);
+
+//--- variables
+// @colorA: ;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    box-sizing: border-box;
+    font-family: 'Roboto', Times, serif;
+    color: #fff;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+img,object,embed,canvas,video,audio,picture,svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    width: 930px;
+    margin: 0 auto;
+}
+
+.center-fluid {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: 20px;
+}
+
+body {
+    background: url(/img/bg-site.jpg) center -230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 105px 40px 105px;
+    
+}
+
+.clear {
+    clear: both;
+}
+
+// ------------------- Header
+
+header {
+    .top {
+        .name {
+            display: inline-block;
+            text-align: left;
+            margin-bottom: 25px;
+            h2 {
+                background-color: #767676;
+                border-bottom: solid 10px #bababa;
+                font-size: 42px;
+                line-height: 65px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-weight: 400;
+                
+            }
+            h1 {
+                background-color: #ababab;
+                border-top: #fff;
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 400;
+                display: inline;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        .sociaux {
+            float: right;
+            padding-top: 8px;
+            display: inline-block;
+            ul li {
+                display: inline;
+                a.linkedin {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+    nav.menu {
+        border-top: solid 3px #fff;
+        nav {
+            ul {
+                text-align: center;
+                
+            }
+            li a{
+                float: left;
+                width: 310px;
+            }
+            a {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 400;
+            }
+        }
+    }
+}   
+
+
+/* ------------------------ MEDIA QUERIES 960px ---- */
+
+@media screen and (max-width: 960px) {
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+}
